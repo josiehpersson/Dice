@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import{devToolsEnhancer} from 'redux-devtools-extension';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-import {outcomes, diceArray} from './reducers/index';
+import { outcomes } from './reducers/index';
 
 const store = createStore(outcomes, devToolsEnhancer());
 

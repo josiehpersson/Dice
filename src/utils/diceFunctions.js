@@ -5,9 +5,6 @@ import Dice5 from '../media/dices/dice_5.svg';
 import Dice6 from '../media/dices/dice_6.svg';
 import Dice1 from '../media/dices/dice_1.svg';
 
-const testArr = [1, 1, 2, 2, 2, 3, 4, 4, 4, 4, 5, 5, 6, 6, 6, 6];
-const testNum = 6;
-
 export const GET_DICE = (dice) => {
   if (dice === 1) {
     return Dice1;
@@ -52,7 +49,6 @@ export const GET_NUMBER_ROLLS = (arr, number) => {
   const findNum = arr.filter((num) => num === number);
   return findNum.length;
 };
-
 
 export const GET_ROLL_PERCENTAGE = (arr, number) => {
   const findNum = arr.filter((num) => num === number);

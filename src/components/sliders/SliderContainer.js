@@ -3,7 +3,6 @@ import DiceSlider from './DiceSlider';
 import { DICE_SIDES, DEFAULT_SLIDE_VALUES } from '../../utils/constants';
 import { CREATE_DICE_ARRAY } from '../../utils/diceFunctions';
 
-
 const styles = {
   container: {
     width: 600,
@@ -32,7 +31,12 @@ const SliderContainer = (props) => {
     return (
       <div key={diceside} style={styles.container}>
         <label>{diceside}</label>
-        <DiceSlider onChange={handleUpdateSlide} id={`slide${diceside}`} color={props.color} invertedColor={props.invertedColor} />
+        <DiceSlider
+          onChange={handleUpdateSlide}
+          id={`slide${diceside}`}
+          color={props.color}
+          invertedColor={props.invertedColor}
+        />
       </div>
     );
   });
