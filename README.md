@@ -1,3 +1,6 @@
+# Preview of Dice
+https://60cb29ec136f28000803b42a--unruffled-ride-69f6fc.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
